@@ -12,9 +12,10 @@ const links = {
   ],
   support: [
     { name: "Contact Us", href: "/contact" },
-    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms & Conditions", href: "/terms" },
-    { name: "CBSE Disclosure", href: "/cbse" },
+    { name: "CBSE Disclosure", href: "/disclosure" },
+
     { name: "Sitemap", href: "/sitemap" },
   ],
 };
@@ -85,9 +86,9 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-8 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-1 after:bg-secondary">Newsletter</h4>
             <p className="text-slate-400 text-sm mb-6">Stay updated with our latest news and announcements.</p>
             <form className="space-y-3">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
+              <input
+                type="email"
+                placeholder="Your email address"
                 className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
               />
               <button className="w-full py-3 rounded-xl gold-gradient text-white font-bold hover:shadow-lg hover:shadow-secondary/20 transition-all">
@@ -100,10 +101,11 @@ export default function Footer() {
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-xs">
           <p>© 2026 Vision India Public School. All Rights Reserved. CBSE Affiliation No: 830697.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-secondary">Privacy Policy</Link>
-            <Link href="#" className="hover:text-secondary">Terms of Service</Link>
-            <Link href="#" className="hover:text-secondary">Cookie Settings</Link>
+            <Link href="/privacy-policy" className="hover:text-secondary">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-secondary">Terms of Service</Link>
+            <Link href="/disclosure" className="hover:text-secondary">CBSE Disclosure</Link>
           </div>
+
         </div>
       </div>
     </footer>
