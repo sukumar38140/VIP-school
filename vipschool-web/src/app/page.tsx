@@ -4,17 +4,17 @@ import { useEffect, useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
-import NoticeMarquee from "@/components/home/NoticeMarquee";
 import AboutSection from "@/components/home/AboutSection";
 import FeaturesSection from "@/components/home/FeaturesSection";
 import StatsSection from "@/components/home/StatsSection";
 import GallerySection from "@/components/home/GallerySection";
-import ContactSection from "@/components/home/ContactSection";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Megaphone, ArrowRight } from "lucide-react";
+import { X, Megaphone, Download, ExternalLink } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => setShowPopup(true), 3000);
@@ -25,16 +25,14 @@ export default function Home() {
     <main className="relative min-h-screen">
       <Header />
       
-      <div className="relative pt-0">
+      <div className="relative">
         <Hero />
-        <NoticeMarquee />
+
+      </div>
         <AboutSection />
         <FeaturesSection />
         <StatsSection />
         <GallerySection />
-        <ContactSection />
-      </div>
-
       <Footer />
 
       {/* Admissions Popup */}
@@ -64,15 +62,26 @@ export default function Home() {
                     <span className="text-primary text-2xl">2026-2027</span>
                   </h3>
                   <p className="text-slate-500 mb-8 font-medium">
-                    Limited seats available for Nursery to Grade 9. Secure your child's future at the most premium campus in Srinivasapur.
+                    Limited seats available for Nursery to Grade 9. Secure your child&apos;s future at the most premium campus in Srinivasapur.
                   </p>
                   <div className="flex flex-col gap-4">
-                    <button className="w-full py-4 rounded-2xl gold-gradient text-white font-bold text-lg shadow-xl shadow-secondary/20 hover:scale-[1.02] transition-all">
-                      Apply Online Now
-                    </button>
-                    <button className="w-full py-4 rounded-2xl bg-slate-100 text-navy font-bold hover:bg-slate-200 transition-all">
-                      Download Prospectus
-                    </button>
+                    <motion.button 
+                      onClick={() => router.push('/admissions')}
+                      whileHover={{ scale: 1.02, y: -2 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="w-full py-4 rounded-2xl gold-gradient text-white font-bold text-lg shadow-xl shadow-secondary/20 flex items-center justify-center gap-2 group"
+                    >
+                      <span>Apply Online Now</span>
+                      <ExternalLink size={20} className="group-hover:translate-x-1 transition-transform" />
+                    </motion.button>
+                    <motion.button 
+                      whileHover={{ scale: 1.02, y: -2 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="w-full py-4 rounded-2xl bg-slate-100 text-navy font-bold hover:bg-slate-200 transition-all flex items-center justify-center gap-2"
+                    >
+                      <span>Download Brochure</span>
+                      <Download size={20} />
+                    </motion.button>
                   </div>
                 </div>
               </div>

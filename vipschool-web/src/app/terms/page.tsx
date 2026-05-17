@@ -9,7 +9,7 @@ export default function TermsAndConditions() {
       <PageHero 
         title="Terms & Conditions"
         subtitle="The guidelines and rules for the Vision India Public School community."
-        image="/hero.png"
+        image="/hero.jpg"
       />
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">

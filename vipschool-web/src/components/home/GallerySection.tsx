@@ -3,16 +3,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { Maximize2, PlayCircle } from "lucide-react";
+import { Maximize2 } from "lucide-react";
 
 const images = [
-  { src: "/hero.png", title: "Main Campus", cat: "Campus" },
-  { src: "/hero.png", title: "Science Lab", cat: "Academic" },
-  { src: "/hero.png", title: "Sports Day", cat: "Sports" },
-  { src: "/hero.png", title: "Annual Event", cat: "Events" },
-  { src: "/hero.png", title: "Smart Class", cat: "Academic" },
-  { src: "/hero.png", title: "Library", cat: "Campus" },
+  { src: "/hero.jpg", title: "Main Campus", cat: "Campus" },
+  { src: "/hero.jpg", title: "Science Lab", cat: "Academic" },
+  { src: "/hero.jpg", title: "Sports Day", cat: "Sports" },
+  { src: "/hero.jpg", title: "Annual Event", cat: "Events" },
+  { src: "/hero.jpg", title: "Smart Class", cat: "Academic" },
+  { src: "/hero.jpg", title: "Library", cat: "Campus" },
 ];
+
 
 
 

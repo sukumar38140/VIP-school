@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <PageHero 
         title="Privacy Policy"
         subtitle="How we protect and manage your data at Vision India Public School."
-        image="/hero.png"
+        image="/hero.jpg"
       />
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">

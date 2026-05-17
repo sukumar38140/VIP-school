@@ -4,9 +4,8 @@ import { useState } from "react";
 import { 
   LayoutDashboard, Bell, Image as ImageIcon, Users, 
   GraduationCap, FileText, Settings, LogOut, Plus,
-  Search, Filter, MoreVertical, Edit, Trash2
+  Search, Edit, Trash2
 } from "lucide-react";
-import { motion } from "framer-motion";
 
 const sidebarItems = [
   { icon: LayoutDashboard, label: "Dashboard", active: true },
@@ -61,7 +60,7 @@ export default function AdminDashboard() {
         <header className="flex justify-between items-center mb-12">
           <div>
             <h2 className="text-3xl font-black text-navy">{activeTab}</h2>
-            <p className="text-slate-500 font-medium">Manage your school's digital presence</p>
+            <p className="text-slate-500 font-medium">Manage your school&apos;s digital presence</p>
           </div>
           <div className="flex items-center gap-4">
             <div className="relative">
@@ -73,6 +72,7 @@ export default function AdminDashboard() {
               />
             </div>
             <div className="w-12 h-12 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="https://ui-avatars.com/api/?name=Admin+User&background=1A41BB&color=fff" alt="Profile" />
             </div>
           </div>

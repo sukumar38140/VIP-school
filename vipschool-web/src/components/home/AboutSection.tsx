@@ -39,12 +39,13 @@ export default function AboutSection() {
               className="relative rounded-[2.5rem] overflow-hidden shadow-2xl z-10"
             >
               <Image 
-                src="/hero.png" 
+                src="/hero.jpg" 
                 alt="Vision India Public School Environment" 
                 width={600} 
                 height={700} 
                 className="w-full h-auto object-cover"
               />
+
 
 
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />

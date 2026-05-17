@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Phone, Mail, MapPin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -15,6 +15,8 @@ const navigation = [
   { name: "Admissions", href: "/admissions" },
   { name: "Facilities", href: "/facilities" },
   { name: "Results", href: "/results" },
+  { name: "Notifications", href: "/notifications" },
+  { name: "Careers", href: "/careers" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -32,28 +34,14 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 w-full z-50 transition-all duration-500">
-      {/* Top Bar */}
-      <div className={cn(
-        "bg-primary text-white py-2 transition-all duration-500 overflow-hidden",
-        isScrolled ? "h-0 opacity-0" : "h-auto opacity-100"
-      )}>
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm gap-2">
-          <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5"><Phone size={14} className="text-secondary" /> +91 95357 62911</span>
-            <span className="flex items-center gap-1.5"><Mail size={14} className="text-secondary" /> info@vipschool.edu.in</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <MapPin size={14} className="text-secondary" /> Srinivasapur, Kolar, Karnataka
-          </div>
-        </div>
-      </div>
+
 
       {/* Main Nav */}
       <nav className={cn(
         "transition-all duration-500 py-4",
         isScrolled 
           ? "glass shadow-xl py-2 mt-0" 
-          : "bg-transparent py-6"
+          : "bg-white shadow-md py-4"
       )}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-3 group">
@@ -68,13 +56,13 @@ export default function Header() {
             <div className="flex flex-col">
               <span className={cn(
                 "font-bold text-xl md:text-2xl tracking-tight transition-colors",
-                isScrolled ? "text-primary" : "text-white"
+                "text-primary"
               )}>
                 VISION INDIA
               </span>
               <span className={cn(
                 "text-[10px] md:text-xs font-medium tracking-[0.2em] transition-colors",
-                isScrolled ? "text-secondary" : "text-secondary"
+                "text-secondary"
               )}>
                 PUBLIC SCHOOL
               </span>
@@ -89,7 +77,7 @@ export default function Header() {
                 href={item.href}
                 className={cn(
                   "px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 relative group",
-                  isScrolled ? "text-navy hover:text-primary" : "text-white hover:text-secondary"
+                  "text-navy hover:text-primary"
                 )}
               >
                 {item.name}
@@ -108,7 +96,7 @@ export default function Header() {
           <button 
             className={cn(
               "lg:hidden p-2 rounded-lg transition-colors",
-              isScrolled ? "text-navy" : "text-white"
+              "text-navy"
             )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >

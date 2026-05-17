@@ -9,6 +9,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://vipschool.edu.in'),
   title: "Vision India Public School | Learning Mission with Global Vision",
   description: "Vision India Public School (CBSE Affiliation No. 830697) - Best CBSE School in Srinivasapur, Kolar. Admissions Open for 2026-27.",
   keywords: ["CBSE school Srinivasapur", "Best school in Kolar", "Vision India Public School", "Admissions 2026-27", "Top school Karnataka"],

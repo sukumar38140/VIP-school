@@ -9,7 +9,7 @@ interface PageHeroProps {
   image?: string;
 }
 
-export default function PageHero({ title, subtitle, image = "/hero.png" }: PageHeroProps) {
+export default function PageHero({ title, subtitle, image = "/hero.jpg" }: PageHeroProps) {
   return (
     <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -20,8 +20,8 @@ export default function PageHero({ title, subtitle, image = "/hero.png" }: PageH
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 premium-gradient opacity-90 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-navy/40" />
+        <div className="absolute inset-0 premium-gradient opacity-60 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-navy/20" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10 text-center">
