@@ -39,8 +39,8 @@ export default function AboutSection() {
               className="relative rounded-[2.5rem] overflow-hidden shadow-2xl z-10"
             >
               <Image 
-                src="/hero.jpg" 
-                alt="Vision India Public School Environment" 
+                src="/vision-india-school.jpg" 
+                alt="Vision India Public School Campus" 
                 width={600} 
                 height={700} 
                 className="w-full h-auto object-cover"

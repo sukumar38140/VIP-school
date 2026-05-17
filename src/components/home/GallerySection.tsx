@@ -6,12 +6,12 @@ import { useState } from "react";
 import { Maximize2 } from "lucide-react";
 
 const images = [
-  { src: "/hero.jpg", title: "Main Campus", cat: "Campus" },
-  { src: "/hero.jpg", title: "Science Lab", cat: "Academic" },
-  { src: "/hero.jpg", title: "Sports Day", cat: "Sports" },
-  { src: "/hero.jpg", title: "Annual Event", cat: "Events" },
-  { src: "/hero.jpg", title: "Smart Class", cat: "Academic" },
-  { src: "/hero.jpg", title: "Library", cat: "Campus" },
+  { src: "/vision-india-school.jpg", title: "Main Campus Entrance", cat: "Campus" },
+  { src: "/physics-lab.jpg", title: "Practical Physics Lab", cat: "Academic" },
+  { src: "/events.jpeg", title: "Sports Day Activities", cat: "Sports" },
+  { src: "/campus.jpg", title: "Lush Campus Courtyard", cat: "Campus" },
+  { src: "/computer-lab.jpg", title: "High-Tech Computer Lab", cat: "Academic" },
+  { src: "/events.jpeg", title: "Annual Celebrations", cat: "Events" },
 ];
 
 

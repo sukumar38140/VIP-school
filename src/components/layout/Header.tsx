@@ -9,12 +9,12 @@ import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Academics", href: "/academics" },
+  { name: "About Us", href: "/about?tab=overview" },
+  { name: "Academics", href: "/about?tab=academics" },
   { name: "Gallery", href: "/gallery" },
   { name: "Admissions", href: "/admissions" },
-  { name: "Facilities", href: "/facilities" },
-  { name: "Results", href: "/results" },
+  { name: "Facilities", href: "/about?tab=facilities" },
+  { name: "Results", href: "/about?tab=results" },
   { name: "Notifications", href: "/notifications" },
   { name: "Careers", href: "/careers" },
   { name: "Contact", href: "/contact" },

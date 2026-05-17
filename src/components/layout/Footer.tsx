@@ -4,17 +4,17 @@ import { Globe, Camera, Send, PlayCircle, Phone, Mail, MapPin, ArrowRight } from
 
 const links = {
   quick: [
-    { name: "About Us", href: "/about" },
-    { name: "Academics", href: "/academics" },
+    { name: "About Us", href: "/about?tab=overview" },
+    { name: "Academics", href: "/about?tab=academics" },
     { name: "Gallery", href: "/gallery" },
     { name: "Admissions", href: "/admissions" },
     { name: "Careers", href: "/careers" },
   ],
   support: [
     { name: "Contact Us", href: "/contact" },
-    { name: "Privacy Policy", href: "/privacy-policy" },
-    { name: "Terms & Conditions", href: "/terms" },
-    { name: "CBSE Disclosure", href: "/disclosure" },
+    { name: "Privacy Policy", href: "/disclosure?tab=privacy" },
+    { name: "Terms & Conditions", href: "/disclosure?tab=terms" },
+    { name: "CBSE Disclosure", href: "/disclosure?tab=disclosure" },
   ],
 };
 
@@ -99,9 +99,9 @@ export default function Footer() {
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-xs">
           <p>© 2026 Vision India Public School. All Rights Reserved. CBSE Affiliation No: 830697.</p>
           <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-secondary">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-secondary">Terms of Service</Link>
-            <Link href="/disclosure" className="hover:text-secondary">CBSE Disclosure</Link>
+            <Link href="/disclosure?tab=privacy" className="hover:text-secondary">Privacy Policy</Link>
+            <Link href="/disclosure?tab=terms" className="hover:text-secondary">Terms of Service</Link>
+            <Link href="/disclosure?tab=disclosure" className="hover:text-secondary">CBSE Disclosure</Link>
           </div>
 
         </div>
