@@ -4,7 +4,7 @@ import PageHero from "@/components/layout/PageHero";
 
 export default function PrivacyPolicy() {
   return (
-    <main>
+    <main className="relative min-h-screen pt-20">
       <Header />
       <PageHero 
         title="Privacy Policy"

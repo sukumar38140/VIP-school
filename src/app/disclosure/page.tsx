@@ -15,7 +15,7 @@ export default function DisclosurePage() {
     ];
 
     return (
-        <main>
+        <main className="relative min-h-screen pt-20">
             <Header />
             <PageHero
                 title="CBSE Public Disclosure"

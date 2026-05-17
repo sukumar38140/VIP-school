@@ -15,8 +15,6 @@ const links = {
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms & Conditions", href: "/terms" },
     { name: "CBSE Disclosure", href: "/disclosure" },
-
-    { name: "Sitemap", href: "/sitemap" },
   ],
 };
 
