@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
 import { Download } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Admissions 2026-27 | Vision India Public School",
+  description: "Apply now for admissions at Vision India Public School for the 2026-27 academic year. Limited seats available for Nursery to Grade 9.",
+  keywords: ["admissions", "school admissions 2026", "apply online", "VIPS admissions"],
+  openGraph: {
+    title: "Admissions Open 2026-27",
+    description: "Join Vision India Public School. Admissions open for Nursery to Grade 9.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function AdmissionsPage() {
   return (

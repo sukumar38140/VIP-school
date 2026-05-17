@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
 import { Upload } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Careers | Vision India Public School",
+  description: "Join our team of dedicated educators and professionals. Explore career opportunities at Vision India Public School.",
+  keywords: ["careers", "job opportunities", "teaching positions", "employment"],
+  openGraph: {
+    title: "Careers at Vision India Public School",
+    description: "Build your career with us. Current job openings available.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function CareersPage() {
   return (

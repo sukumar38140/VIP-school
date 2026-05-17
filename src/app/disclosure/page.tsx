@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
 import { FileText, Download, ShieldCheck } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "CBSE Public Disclosure | Vision India Public School",
+  description: "CBSE mandatory public disclosure and information at Vision India Public School. View affiliations and certifications.",
+  keywords: ["CBSE disclosure", "school information", "certifications", "affiliations"],
+  openGraph: {
+    title: "CBSE Public Disclosure",
+    description: "Mandatory CBSE information and documentation.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function DisclosurePage() {
     const documents = [

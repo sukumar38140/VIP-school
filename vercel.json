@@ -1,0 +1,31 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "devCommand": "next dev",
+  "installCommand": "npm ci",
+  "env": {},
+  "envPrefix": "NEXT_PUBLIC_",
+  "regions": ["iad1"],
+  "functions": {
+    "api/**": {
+      "memory": 1024,
+      "maxDuration": 60
+    },
+    "pages/**": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "routes": [
+    {
+      "src": "^/(?:(?:api/.*|_next/static/.*|_next/image\\?.*|static/.*|favicon\\.ico|sitemap\\.xml|robots\\.txt))$",
+      "continue": true
+    },
+    {
+      "src": "^(?:/)?(.*)",
+      "dest": "/"
+    }
+  ]
+}

@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Vision India Public School",
+  description: "Privacy policy of Vision India Public School. Learn how we protect your data and privacy.",
+  keywords: ["privacy policy", "data protection", "privacy"],
+  openGraph: {
+    title: "Privacy Policy",
+    description: "Our commitment to your privacy and data protection.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function PrivacyPolicy() {
   return (

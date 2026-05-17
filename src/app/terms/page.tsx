@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions | Vision India Public School",
+  description: "Terms and conditions, school regulations, and guidelines for the Vision India Public School community.",
+  keywords: ["terms", "conditions", "school rules", "regulations"],
+  openGraph: {
+    title: "Terms & Conditions",
+    description: "School policies and community guidelines.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function TermsAndConditions() {
   return (

@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
 import { Download, Bell, Search } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Notifications & Updates | Vision India Public School",
+  description: "Latest news, circulars, and announcements from Vision India Public School. Stay updated with important information.",
+  keywords: ["notifications", "announcements", "school news", "circulars"],
+  openGraph: {
+    title: "Latest Updates",
+    description: "Stay informed with our latest announcements and notifications.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function NotificationsPage() {
   const notifications = [

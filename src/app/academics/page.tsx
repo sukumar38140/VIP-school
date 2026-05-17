@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
+
+export const metadata: Metadata = {
+  title: "Academics | Vision India Public School",
+  description: "Explore our CBSE curriculum, smart classrooms, and activity-based learning methodologies at VIPS.",
+  keywords: ["CBSE curriculum", "smart classrooms", "activity-based learning", "academics"],
+  openGraph: {
+    title: "Academics at Vision India Public School",
+    description: "World-class academics with modern learning methodologies.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function AcademicsPage() {
   return (

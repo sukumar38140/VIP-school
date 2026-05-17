@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Media Gallery | Vision India Public School",
+  description: "Explore the vibrant campus life, facilities, events, and achievements at Vision India Public School.",
+  keywords: ["gallery", "photos", "campus life", "school events"],
+  openGraph: {
+    title: "Media Gallery",
+    description: "Visual journey through Vision India Public School.",
+    images: ["/logo.jpg"],
+  },
+};
 
 const categories = ["All", "Campus", "Sports", "Cultural", "Celebrations", "Academics"];
 

@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
+
+export const metadata: Metadata = {
+  title: "World-Class Facilities | Vision India Public School",
+  description: "Explore our state-of-the-art facilities including smart classrooms, labs, sports complex, library, and more.",
+  keywords: ["school facilities", "classrooms", "laboratories", "sports complex"],
+  openGraph: {
+    title: "Our Facilities",
+    description: "World-class infrastructure for excellence in education.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function FacilitiesPage() {
   const facilities = [

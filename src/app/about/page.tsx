@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
+
+export const metadata: Metadata = {
+  title: "About Us | Vision India Public School",
+  description: "Learn about Vision India Public School's history, vision, mission, and philosophy dedicated to educational excellence.",
+  keywords: ["about VIPS", "school mission", "school vision", "educational philosophy"],
+  openGraph: {
+    title: "About Vision India Public School",
+    description: "Discover our commitment to educational excellence and student development.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function AboutPage() {
   return (

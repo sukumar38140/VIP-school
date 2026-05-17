@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/layout/PageHero";
+
+export const metadata: Metadata = {
+  title: "Academic Results | Vision India Public School",
+  description: "Celebrate the outstanding academic achievements and results of our students. Excellence in board examinations.",
+  keywords: ["results", "academic results", "board results", "student achievement"],
+  openGraph: {
+    title: "Academic Excellence",
+    description: "Outstanding achievements and results from our students.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function ResultsPage() {
   return (
